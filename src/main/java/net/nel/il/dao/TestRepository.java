@@ -17,6 +17,9 @@ import java.util.List;
 @Repository
 public class TestRepository {
 
+
+    //  REPO TO TEST APP.
+
     @Autowired
     private EntityManagerFactory entityManagerFactory;
 

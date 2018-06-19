@@ -33,32 +33,6 @@ public class MainController {
         return gson.toJson(outputAccount);
     }
 
-//    @RequestMapping(value = "/", method = RequestMethod.GET)
-//    public String index1(){
-//            mainService.b();
-//        return "lul";
-//    }
-
-    private String test(){
-        String json;
-        Gson gson = new Gson();
-        InputAccount inputAccount = new InputAccount();
-        inputAccount.setId(4);
-        inputAccount.setIdentifier(21);
-        inputAccount.setCompanion_id(22);
-        inputAccount.setLat(56.2820032);
-        inputAccount.setRadius(0.009f);
-        inputAccount.setLng(44.0891568);
-        inputAccount.setStatus(1);
-//        InputAccount inputAccount = new InputAccount();
-//        inputAccount.setId(13);
-//        inputAccount.setIdentifier(19);
-//        inputAccount.setCompanion_id(20);
-//        inputAccount.setMessage("1");
-        json = gson.toJson(inputAccount);
-        return json;
-    }
-
     @RequestMapping(value = "/show", method = RequestMethod.GET)
     public String show(){
         String result = mainService.show();

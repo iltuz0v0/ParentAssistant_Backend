@@ -94,10 +94,8 @@ public class MainService {
                 || id == Handler.NEGATIVE_TRYING_TO_RETURN_OLD_ACCOUNT) {
             accountCreationRepository.createAccount(inputAccount,
                     System.currentTimeMillis(), outputAccount);
-            System.out.println("create account 1");
         }
         if(id == Handler.POSITIVE_TRYING_TO_RETURN_OLD_ACCOUNT){
-            System.out.println("create account 2");
             accountCreationRepository.returnAccount(inputAccount, outputAccount);
         }
     }
